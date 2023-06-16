@@ -1,14 +1,17 @@
 
 import './App.css';
+import Header from './components/Header'
 
 function App() {
   return (
-      <h1 className="rotate-180 text-3xl bg-amber-600 flex flex-1 "
-           style={{ writingMode: 'vertical-rl' }}>
-        SUBSCRIBE AND CANCEL ANYTIME ANYWHERE
-      </h1>
+      <div className="container mx-auto w-[1440px] bg-amber-600">
 
-  );
+          <Header />
+
+      </div>
+  )
+
+
 }
 
 export default App;
