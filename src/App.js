@@ -6,6 +6,8 @@ import HomePageProducts from './components/HomePageProducts'
 import BottomSection from './components/BottomSection'
 import Footer from "./components/Footer";
 import Product from "./components/Product";
+import Login from "./components/Login"
+import AddProduct from "./components/AddProduct";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -22,6 +24,10 @@ function App() {
              <Routes>
                  <Route path="/" element={<HomePageProducts />} />
                  <Route path="/product/:id" element={<Product />} />
+                 <Route path="/login" element={<Login />} />
+                 <Route path="/addproduct" element={<AddProduct />} />
+
+
              </Routes>
 
 
