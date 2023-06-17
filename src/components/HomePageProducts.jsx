@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 export default function HomePageProducts() {
 
@@ -16,7 +17,7 @@ export default function HomePageProducts() {
                     <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
                     <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
                     <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
+                    <Link to="/product/1"  className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</Link>
                 </div>
 
                 <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
