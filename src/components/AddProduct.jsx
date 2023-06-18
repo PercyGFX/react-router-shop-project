@@ -1,25 +1,19 @@
 import React from 'react'
 import axios from "axios";
-import Popup from 'reactjs-popup';
 import { storage } from '../services/firebase'
 
-export default function AddProduct() {
+export default function AddProduct({setShowPopup, setpopup}) {
 
     const initialState = {
         name: '',
         brand: '',
         description: '',
         price: '',
-        file: null,}
+        image: null,}
 
     const [formData, setformData] = React.useState(initialState)
-    const [showPopup, setShowPopup] = React.useState(false);
-    const [popup, setpopup] = React.useState("")
 
-function handleclose(event) {
 
-    setShowPopup(false)
-}
 
 
     function handlechange(event) {
@@ -97,14 +91,7 @@ function handleclose(event) {
         <div className="bg-white text-center py-10">
             <h1 className="text-2xl font-bold text-[#005D7A] font-poppins"> ADD PRODUCT</h1>
 
-            <Popup open={showPopup} onClose={() => setShowPopup(false)}>
-                <div className="bg-amber-100 py-6 px-3" >
 
-                    <p className="font-poppins font-semibold text-xl">{popup}</p>
-
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-3 px-4" onClick={handleclose}>Close</button>
-                </div>
-            </Popup>
             <form onSubmit={handlesubmit} className="mt-7">
 
                 <h1 className="text-xl font-poppins mt-4">Name</h1>
