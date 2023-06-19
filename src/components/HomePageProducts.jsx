@@ -1,7 +1,34 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 export default function HomePageProducts() {
+
+   const [product, setproduct] = React.useState("")
+
+
+React.useEffect(()=>{
+   axios({
+        method: 'get',
+        url: 'http://localhost:5000/allphones',
+
+    })
+        .then((response) => {
+            console.log(response.data.data);
+            setproduct ( response.data.data)
+
+
+
+
+
+        })
+        .catch((error) => {
+            console.log(error);
+            //setShowPopup(true);
+            //setpopup(response.data.message);
+        })
+
+},[])
 
 
 
@@ -12,108 +39,19 @@ export default function HomePageProducts() {
 
             <div className="flex flex-wrap px-4 ">
 
-
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <Link to="/product/1"  className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</Link>
-                </div>
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
-
-
-                <div className="shadow-md w-[275px] text-center p-1 mx-8 mt-36">
-                    <img alt="" className="-mt-20 mx-auto mb-7" src="/images/13.jpg"  />
-                    <h1 className="font-bold font-poppins text-2xl mb-1">Xiaomi 13 Ultra</h1>
-                    <p className="text-sm mb-2">108MP pro-grade main camera 90Hz FHD+ AMOLED DotDisplay 33W fast charging</p>
-                    <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: 130$</h3>
-                    <button className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</button>
-                </div>
+                {product ? (
+                    product.map((product) => (
+                        <div key={product.id} className="shadow-md w-[275px] text-center p-1 pb-5 mx-8 mt-36">
+                            <img alt="" className="-mt-20 mx-auto mb-7" src={product.image} />
+                            <h1 className="font-bold font-poppins text-xl mb-1">{product.name}</h1>
+                            <p className="text-sm mb-2">{product.description}</p>
+                            <h3 className="font-bold text-lg font-poppins text-emerald-600 mb-2">PRICE: {product.price}</h3>
+                            <Link to={`/product/${product.id}`} className="bg-blue-700 text-white font-poppins font-semibold py-2 px-5 mb-2">VIEW</Link>
+                        </div>
+                    ))
+                ) : (
+                    <p>Loading...</p>
+                )}
 
 
 
