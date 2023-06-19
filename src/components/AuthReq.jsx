@@ -10,7 +10,7 @@ export default function AuthReq() {
 
 
     React.useEffect(() => {
-        axios.get('http://localhost:5000/check')
+        axios.get(`${process.env.REACT_APP_BACK_END_URL}/check`)
             .then((response) => {
                 if (response.data.success === true) {
 

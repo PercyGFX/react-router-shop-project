@@ -10,7 +10,7 @@ export default function HomePageProducts() {
 React.useEffect(()=>{
    axios({
         method: 'get',
-        url: 'http://localhost:5000/allphones',
+        url: `${process.env.REACT_APP_BACK_END_URL}/allphones`,
 
     })
         .then((response) => {

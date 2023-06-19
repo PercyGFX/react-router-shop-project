@@ -58,7 +58,7 @@ export default function AddProduct({setShowPopup, setpopup}) {
                 // Send the Axios request after image upload
                 axios({
                     method: 'post',
-                    url: 'http://localhost:5000/postphone',
+                    url: `${process.env.REACT_APP_BACK_END_URL}/postphone`,
                     data: {
                         name: formData.name,
                         brand: formData.brand,
