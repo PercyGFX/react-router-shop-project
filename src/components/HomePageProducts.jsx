@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 
 export default function HomePageProducts() {
 
+
+
     return (
 
         <div className="bg-white text-center py-6 pb-16">

@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe262351-dff5-487b-bd13-e909b9864150" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AuthReq.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddProduct.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddProduct.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePageProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePageProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/firebase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\lottery\react-router-shop-project" />
       <recent name="C:\lottery\react-router-shop-project\src" />
     </key>
   </component>
@@ -59,7 +63,8 @@
       <workItem from="1686987038096" duration="591000" />
       <workItem from="1687017050779" duration="7311000" />
       <workItem from="1687029827152" duration="3129000" />
-      <workItem from="1687083852597" duration="14282000" />
+      <workItem from="1687083852597" duration="14976000" />
+      <workItem from="1687160055022" duration="2216000" />
     </task>
     <servers />
   </component>
