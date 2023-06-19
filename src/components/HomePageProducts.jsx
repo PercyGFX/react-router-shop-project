@@ -37,7 +37,7 @@ React.useEffect(()=>{
         <div className="bg-white text-center py-6 pb-16">
             <h1 className="text-2xl font-bold text-[#005D7A] font-poppins"> LATEST PRODUCTS</h1>
 
-            <div className="flex flex-wrap px-4 ">
+            <div className="flex flex-wrap px-4 justify-evenly ">
 
                 {product ? (
                     product.map((product) => (
